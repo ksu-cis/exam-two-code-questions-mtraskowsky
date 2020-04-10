@@ -11,6 +11,10 @@ namespace ExamTwoCodeQuestions.Data
         /// </summary>
         public event PropertyChangedEventHandler PropertyChanged;
 
+        /// <summary>
+        /// Method to handle the property changed notifications
+        /// </summary>
+        /// <param name="propName"></param>
         protected void NotifyPropertyChanged(string propName)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propName));

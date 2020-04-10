@@ -76,9 +76,7 @@ namespace ExamTwoCodeQuestions.DataTests
 
         // EXAM 2 Question 2
 
-        /// <summary>
-        /// Test to make sure the Cobbler class implements INotifyPropertyChanged
-        /// </summary>
+        // Test 1:  Cobbler class should implement INotifyPropertyChanged
         [Fact]
         public void ShouldImplementINotifyPropertyChangedInterface()
         {
@@ -86,9 +84,7 @@ namespace ExamTwoCodeQuestions.DataTests
             Assert.IsAssignableFrom<INotifyPropertyChanged>(cobbler);
         }
 
-        // test that any time a property changed, propertychanged event handler is invoked
-
-        // Test: Changing FruitFilling from default (Peach) to Cherry should PropertyChanged for "Fruit"
+        // Test 2: Changing FruitFilling from default (Peach) to Cherry should PropertyChanged for "Fruit"
         [Fact]
         public void ChangingFruitFillingToCherryShouldInvokePropertyChangedForFruit()
         {
@@ -99,7 +95,7 @@ namespace ExamTwoCodeQuestions.DataTests
             });
         }
 
-        // Test: Changing FruitFilling from default (Peach) to Blueberry should PropertyChanged for "Fruit"
+        // Test 3: Changing FruitFilling from default (Peach) to Blueberry should PropertyChanged for "Fruit"
         [Fact]
         public void ChangingFruitFillingToBlueberryShouldInvokePropertyChangedForFruit()
         {
@@ -110,7 +106,7 @@ namespace ExamTwoCodeQuestions.DataTests
             });
         }
 
-        // Test: Changing the WithIceCream from default (true) to false should trigger PropertyChanged for WithIceCream
+        // Test 4: Changing the WithIceCream from default (true) to false should trigger PropertyChanged for WithIceCream
         [Fact]
         public void ChangingWithIceCreamShouldInvokePropertyChangedForWithIceCream()
         {
@@ -121,7 +117,7 @@ namespace ExamTwoCodeQuestions.DataTests
             });
         }
 
-        // Changing WithIceCream should trigger PropertyChanged for SpecialInstructions
+        // Test 5: Changing WithIceCream should trigger PropertyChanged for SpecialInstructions
         [Fact]
         public void ChangingWithIceCreamShouldInvokePropertyChangedForSpecialInstructions()
         {
@@ -132,7 +128,7 @@ namespace ExamTwoCodeQuestions.DataTests
             });
         }
 
-        // Changing WithIceCream should trigger PropertyChanged for Price
+        // Test 6: Changing WithIceCream should trigger PropertyChanged for Price
         [Fact]
         public void ChangingWithIceCreamShouldInvokePropertyChangedForPrice()
         {
